@@ -36,7 +36,7 @@ function increaseTime() {
     let s = seconds % 60;
     m = m < 10 ? `0${m}` : m;
     s = s < 10 ? `0${s}` : s;
-    timeEl.innerHTML = `Time: ${m}:${s}`;
+    timeEl.innerHTML = `TIME: ${m}:${s}`;
     seconds++;
 }
 
@@ -81,6 +81,10 @@ function increaseScore() {
 
     if (score > 19) {
         message.classList.add('visible');
+        setTimeout (() => {
+        message.classList.add('hide'); }, 5000);
     }
-    scoreEl.innerHTML = `Score: ${score}`;
-}
+    scoreEl.innerHTML = `SCORE: ${score}`
+    
+    
+    };
