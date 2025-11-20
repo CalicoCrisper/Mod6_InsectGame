@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url('https://use.typekit.net/cux2gpc.css');
 
 * {
   box-sizing: border-box;
@@ -7,20 +7,25 @@
 
 body {
   background-image: url(img/background.png);
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: 'sausage', sans-serif;
+  font-size: 50px;
   height: 100vh;
   overflow: hidden;
   margin: 0;
   text-align: center;
+  color: #222920;
+
 }
 
 .btn {
   border: 0;
-  background-color: #fff;
-  color: #516dff;
-  padding: 15px 20px;
+  background-color: #71B38F;
+  color: #fff;
+  padding: 45px 50px;
   font-family: inherit;
   cursor: pointer;
+  border-radius: 30px;
+  font-size: 30px;
 }
 
 .btn:hover {
@@ -66,7 +71,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   list-style-type: none;
-  padding: 0;
+  padding: 10px;
 }
 
 .insects-list li {
@@ -85,7 +90,7 @@ h1 {
 
 .choose-insect-btn:hover {
   background-color: white;
-  color: #516dff;
+  color: #71B38F;
 }
 
 .choose-insect-btn:active {
@@ -109,7 +114,8 @@ h1 {
 
 .message {
   line-height: 1.7;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(34, 41, 32, 0.5);
+  color: #fff;
   width: 100%;
   padding: 20px;
   z-index: 100;
@@ -125,7 +131,14 @@ h1 {
 .message.visible {
   transform: translate(-50%, 150%);
   opacity: 1;
+  font-size: 30px;
 }
+
+.message.hide {
+  opacity: 1;
+   transform: translate(50%, 150%);
+   transition: transform 0.4s ease-in;
+} 
 
 
 
@@ -139,8 +152,6 @@ h1 {
   position: absolute;
   transform: translate(-50%, -50%) scale(1) rotate(145deg);
   transition: transform 0.3s ease-in-out;
-    animation: rotate 5s linear infinte;
-
 }
 
 .insect img {
