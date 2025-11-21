@@ -7,14 +7,15 @@ const scoreEl = document.getElementById('score');
 const message = document.getElementById('message');
 const splat = document.getElementById('splat');
 
-var insectSpeed = 5;
-
 let seconds = 0;
 let score = 0;
 let selectedInsect = {};
 
+// SCREEN 1
 startBtn.addEventListener('click', () => screens[0].classList.add('up'));
 
+
+// SCREEN 2
 chooseInsectBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         const img = btn.querySelector('img');
@@ -27,6 +28,8 @@ chooseInsectBtns.forEach(btn => {
     });
 });
 
+
+// SCREEN 3
 function startGame() {
     setInterval(increaseTime, 1000);
 }
@@ -85,6 +88,5 @@ function increaseScore() {
         message.classList.add('hide'); }, 5000);
     }
     scoreEl.innerHTML = `SCORE: ${score}`
-    
-    
+
     };

@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 
-
 body {
   background-image: url(img/background.png);
-font-family: 'Press Start 2P', sans-serif;  font-size: 30px;
+font-family: 'Press Start 2P', sans-serif;  
+font-size: 30px;
   height: 100vh;
   overflow: hidden;
   margin: 0;
@@ -16,6 +16,7 @@ font-family: 'Press Start 2P', sans-serif;  font-size: 30px;
 
 }
 
+/* SCREEN 1*/
 .btn {
   border: 0;
   background-color: #71B38F;
@@ -49,6 +50,8 @@ font-family: 'Press Start 2P', sans-serif;  font-size: 30px;
   margin-top: -100vh;
 }
 
+/*SCREEN 2*/
+
 .choose-insect-btn img {
   width: 100px;
   height: 100px;
@@ -62,8 +65,6 @@ a {
 h1 {
   line-height: 1.4;
 }
-
-/* ... */
 
 .insects-list {
   display: flex;
@@ -110,7 +111,7 @@ h1 {
 }
 
 
-
+/*SCREEN 3*/
 .message {
   line-height: 1.7;
   background-color: rgba(34, 41, 32, 0.5);
@@ -138,7 +139,6 @@ h1 {
    transform: translate(50%, 150%);
    transition: transform 0.4s ease-in;
 } 
-
 
 
 .insect {
