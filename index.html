@@ -7,15 +7,21 @@
     <title>Catch The Insect!</title>
     <script src="script.js" defer></script>
   </head>
+
   <body>
+    <!-- SCREEN 1-->
     <div class="screen">
       <h1>Catch The Insect!</h1>
       <button class="btn" id="start-btn">Play Game</button>
     </div>
 
+    <!-- SCREEN 2-->
     <div class="screen">
       <h1>What is your "favorite" insect?</h1>
       <ul class="insects-list">
+
+        <!-- INSECT OPTIONS-->
+
         <li>
           <button class="choose-insect-btn">
             <p>Fly</p>
@@ -83,12 +89,13 @@
 
    <audio id="splat" src="audio/splat.mp3"> </audio>
 
+   <!--SCREEN 3-->
     <div class="screen game-container" id="game-container">
       <h3 id="time" class="time">TIME: 00:00</h3>
       <h3 id="score" class="score">SCORE: 0</h3>
       <h5 id="message" class="message">
         They wont stop multiplying! <br>
-        HURRY! CLICK FASTER!!
+        HURRY! CLICK FASTER TO GET RID OF THEM!!
       </h5>
     </div>
   </body>
